@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I'm Sorry ❤️</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+  }
+
+  .container {
+    background: rgba(0,0,0,0.6);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    max-width: 500px;
+    width: 90%;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+
+  .heart {
+    font-size: 60px;
+    color: #ff6b6b;
+    animation: beat 1s infinite;
+    margin-bottom: 20px;
+  }
+
+  @keyframes beat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+  }
+
+  audio {
+    margin-top: 10px;
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .container {
+      padding: 30px;
+    }
+    h1 {
+      font-size: 28px;
+    }
+    p {
+      font-size: 18px;
+    }
+    .heart {
+      font-size: 50px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      padding: 20px;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .heart {
+      font-size: 40px;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="heart">❤️</div>
+    <h1>I'm Sorry Pichi😔</h1>
+    <p>
+      I know I got angry and scolded you, and I realize now how much it must have hurt you. 
+      I never want my frustration to make you feel unloved or unimportant. You mean the world to me, 
+      and I promise to control my anger, listen more, and treat you with the care and respect you deserve. 
+      I want to make things right between us and bring back the happiness and love we share. 
+      Please forgive me, and let me show you that I can be better for you every single day.
+    </p>
+    <br><br>
+    <!-- Audio message -->
+    <p style="margin-top:20px;margin-bottom:0px; font-size:18px;">Please click to hear my voice ❤️</p>
+    <audio controls>
+      <source src="voice.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+</body>
+</html>
